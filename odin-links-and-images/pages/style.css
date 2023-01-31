@@ -5,7 +5,10 @@ div {
   font-weight: bold;
   text-align: center;
 }
-
+div.nobg{
+  color:#000000;
+  background-color: #FFFFFF;
+}
 .odd {
   color: #000000;
   background-color: #ff000080;
@@ -33,4 +36,21 @@ div {
   font-weight: 900;
   font-family: "Comic Sans";
   text-align: left;
+}
+
+.clicker {
+  font-size: 28px;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+.black_button {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.yellow_button {
+  color: #000000;
+  background-color:#FFFF00;
+  
+
 }
