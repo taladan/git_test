@@ -9,16 +9,28 @@ div {
 .odd {
   color: #000000;
   background-color: #ff000080;
+  text-align: left;
 }
 
 #two {
-
+  color:#0000FF;
+  background-color: #FFFFFF;
+  font-size: 92px;
+  font-family: Verdana, sans-serif;
+  text-align: left;
 }
 
 .three {
-
+  color:#00000070;
+  font-size: 42px;
+  font-family: Impact, sans-serif;
 }
 
 #four {
-
+  color:#000000;
+  background-color: #F8E473;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Comic Sans";
+  text-align: left;
 }
