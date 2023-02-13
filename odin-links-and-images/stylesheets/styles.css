@@ -32,8 +32,9 @@ header {
 
 header > img {
   width: 50%;
-  outline: 2px double navy;
   border: 10px solid cornflowerblue;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 ul {
