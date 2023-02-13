@@ -17,13 +17,20 @@
       }
 
       function capitalize(text) {
-        return String(text).charAt(0).toUpperCase() + text.slice(1);
+        return (
+          String(text).charAt(0).toUpperCase() + text.slice(1).toLowerCase()
+        );
+      }
+
+      function lastLetter(text) {
+        return String(text).slice(-1);
       }
 
       let myString = "quickly";
       console.log(add7(10));
       console.log(multiply(10, 12));
       console.log(capitalize(myString));
+      console.log(lastLetter("flood"));
     </script>
   </body>
 </html>
