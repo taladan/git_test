@@ -35,6 +35,8 @@ header > img {
   border: 10px solid cornflowerblue;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
+  box-shadow: 5px 8px darkgrey;
+  outline: 1px solid wheat;
 }
 
 ul {
