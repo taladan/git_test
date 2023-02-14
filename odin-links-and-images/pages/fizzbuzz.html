@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fizzbuzz</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css" />
+  </head>
+  <body>
+    <h1>This is a console only exercise.</h1>
+    <p>
+      Open devtools and inspect the page, then check the console for output.
+    </p>
+    <script>
+      // Plan:
+      // Does your program have an interface (if so what does it look like)? Console only, no ui
+      // What inputs will your program have? User enters data from a popup/prompt
+      // What's the desired output? desired output is a list of numbers from 1
+      // to the number the user entered.  Each number divisible by 3 will output `Fizz`
+      // each output divisible by 5 will output `Buzz`.  Each number divisible by both
+      // 3 and 5 will output `FizzBuzz`.
+
+      // When a user inputs a number
+      // Loop from 1 to the entered number
+      // if the current number is divisible by 3 then print 'Fizz'
+      // if the current number is divisible by 5 then print 'Buzz'
+      // if the current number is divisible by 3 and 5 then print 'FizzBuzz'
+      // otherwise print the current number
+
+      let answer = parseInt(
+        prompt("Please enter the number you would like to FizzBuzz up to")
+      );
+
+      for (let i = 1; i <= answer; i++) {
+        if (checkFizzBuzz(i)) {
+          console.log("FizzBuzz");
+        } else if (checkFizz(i)) {
+          console.log("Fizz");
+        } else if (checkBuzz(i)) {
+          console.log("Buzz");
+        } else {
+          console.log(i);
+        }
+      }
+
+      function checkFizzBuzz(num) {
+        return num % 3 === 0 && num % 5 === 0;
+      }
+
+      function checkFizz(num) {
+        return num % 3 === 0;
+      }
+
+      function checkBuzz(num) {
+        return num % 5 === 0;
+      }
+    </script>
+  </body>
+</html>
